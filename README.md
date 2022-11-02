@@ -35,7 +35,7 @@ masih bisa dikembangin.
 - Logout
 
 ## Gambar Website
-
+<img src="/img/web1.png">
 .
 
 ### Sumber Refferensi
@@ -47,17 +47,23 @@ masih bisa dikembangin.
 - **[Template BootstrapMade](https://bootstrapmade.com/bootstrap-blog-magazine-templates/)**
 - **[API Gambar Unsplash](https://unsplash.com/image)**
 
-## Contributing
+## SPESIFIKASI
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. PHP 7+
+2. LARAVEL 9
+3. MYSQL/XAMPP
+4. BOOTSTRAP 5
+5. TEMPLATE BOOTSTRAPMADE
+7. API UNSPLASH
 
-## Code of Conduct
+## MAKER Aplikasi BeritaGenZ
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. Akhmad Aziz Mario.
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Tanggal & tahun buat
+
+10 Agustus 2022.
 
 ## License
 
