@@ -35,7 +35,7 @@ masih bisa dikembangin.
 - Logout
 
 ## Gambar Website
-<img src="http://127.0.0.1:8000/img/Untitled.png" width="200">
+<img src="https://drive.google.com/file/d/1Cb48JQOyzU_hGuiYHxHnfLWPqUz7uJjl/view?usp=share_link" width="200">
 .
 
 ### Sumber Refferensi
