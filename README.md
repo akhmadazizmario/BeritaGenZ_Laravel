@@ -35,7 +35,10 @@ masih bisa dikembangin.
 - Logout
 
 ## Gambar Website
+<p align="center">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguLCbzLqauib6SMy3WhPslwE5WSx543tv_5ava5PgpJ1VOzcmlgbs7Pwi01cPUfrAucDqXtAkVXGarI5Z-0UK3lBgMy7bRALYLuO5gP0bdqU2TI-leFzEjPL0qN__-ONcV5NAvUx_4ssYNEa-0ndpsX8mLZAyhuDk7uCxEHUyj81Eunn8LHaykVWjb/w945-h600-p-k-no-nu/web1.png" width="200">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWDnsInV_DEiwwWWYgDnnIaRE0wQQ096ZHkEsMhoATf53fRC6Sio-9NnljZy44MdhK0x36rRx-oixS4QXyQk-Dz2YeNsfrCCzRDcaPB10O_NaNAmPPKXCwSSQGrr02tuv3GhM9-pTusXIMfitDh8wo7Ew53xiapmVflHEpZ3-omWs9MfeHFa1ZeBM7/s320/Screenshot%20(24).png" width="200">
+</p>
 
 ### Sumber Refferensi
 
