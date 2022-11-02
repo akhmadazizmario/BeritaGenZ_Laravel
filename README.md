@@ -60,7 +60,7 @@ masih bisa dikembangin.
 
 ## MAKER Aplikasi BeritaGenZ
 
-1. Akhmad Aziz Mario.
+<strong> Akhmad Aziz Mario </strong>
 
 
 ## Tanggal & tahun buat
