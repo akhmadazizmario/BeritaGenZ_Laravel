@@ -35,7 +35,7 @@ masih bisa dikembangin.
 - Logout
 
 ## Gambar Website
-<img src="/img/web1.png">
+<img src="/img/Untitled.png" alt="aziz" width="200">
 .
 
 ### Sumber Refferensi
