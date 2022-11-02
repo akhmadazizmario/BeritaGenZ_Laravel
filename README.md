@@ -35,7 +35,7 @@ masih bisa dikembangin.
 - Logout
 
 ## Gambar Website
-<img src="/img/Untitled.png" alt="aziz" width="200">
+<img src="http://127.0.0.1:8000/img/Untitled.png" width="200">
 .
 
 ### Sumber Refferensi
