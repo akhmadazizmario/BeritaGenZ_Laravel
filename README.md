@@ -35,8 +35,7 @@ masih bisa dikembangin.
 - Logout
 
 ## Gambar Website
-<img src="https://drive.google.com/file/d/1Cb48JQOyzU_hGuiYHxHnfLWPqUz7uJjl/view?usp=share_link" width="200">
-.
+<img src="https://www.blogger.com/blog/post/edit/2067293176234664128/1993540596468295063#" width="200">
 
 ### Sumber Refferensi
 
