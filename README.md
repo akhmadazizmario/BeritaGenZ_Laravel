@@ -9,7 +9,8 @@
 
 ## APLIKASI WEBSITE BeritaGenZ
 
-developer : aziz mario
+developer : 
+- akhmad aziz mario
 
 
 
