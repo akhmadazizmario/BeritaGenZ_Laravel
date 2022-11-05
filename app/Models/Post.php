@@ -37,12 +37,13 @@ class Post extends Model
 
     public function category()
     {
-        return $this->belongsTo(category::class); # belongsTo itu adalah relasi one to one 1:1 kebalikan ada di models category.php
+        return $this->belongsTo(category::class); # belongsTo itu adalah relasi one to one 1:1 kebalikanya ada di models category.php
         # one to one adalah satu value di dalam tabel yang hanya punya satu value di tabel lain contohnya tabel posts hanya mempunyai 1 kategori yaitu programming di tabel category 
     }
 
     public function author() #author itu kata pengganti user_id
     {
+        #user yeng berwarna hijau itu memanggil modelnya yah
         return $this->belongsTo(User::class, 'user_id'); #maka dipanggil lah value user_id di kolom
     }
 
