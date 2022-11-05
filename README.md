@@ -25,7 +25,7 @@ masih bisa dikembangin.
 - Halaman Tentang Kami
 - Halaman Login
 - Halaman Registrasi
-====================
+=======/=============
 
 ====Back-End=========
 - Halaman Dashboard
@@ -36,7 +36,7 @@ masih bisa dikembangin.
   4. lihat Posts
   5. hapus posts
 - Logout
-=====================
+========/=============
 
 ## Gambar Website
 <p>
@@ -48,7 +48,7 @@ masih bisa dikembangin.
 
 - **[Bootstrap 5](https://getbootstrap.com/docs/5.2/getting-started/introduction/)**
 - **[Ikon Bootstrap](https://icons.getbootstrap.com/)**
-- **[Laravel versi 9](https://laravel.com/)**
+- **[Laravel versi 8](https://laravel.com/)**
 - **[Laravel Documentation](https://laravel.com/docs/9.x)**
 - **[Template BootstrapMade](https://bootstrapmade.com/bootstrap-blog-magazine-templates/)**
 - **[API Gambar Unsplash](https://unsplash.com/image)**
