@@ -9,9 +9,11 @@
 
 ## APLIKASI WEBSITE BeritaGenZ
 
-by: Aziz Mario
+developer : aziz mario
 
-Aplikasi ini saya buat menggunakan Laravel versi 9, saya membuat aplikasi ini karena ingin
+
+
+Aplikasi ini saya buat menggunakan Laravel versi 8, saya membuat aplikasi ini karena ingin
 membuat website blog buatan sendiri, dan terciptalah website BeritaGenZ ini <i class="bi bi-emoji-wink"></i>. 
 walaupun masih belum banyak fitur di website ini, harap dimaklumin karena saya masih tahap belajar & aplikasi ini 
 masih bisa dikembangin.
@@ -23,6 +25,7 @@ masih bisa dikembangin.
 - Halaman Tentang Kami
 - Halaman Login
 - Halaman Registrasi
+====================
 
 ====Back-End=========
 - Halaman Dashboard
@@ -33,6 +36,7 @@ masih bisa dikembangin.
   4. lihat Posts
   5. hapus posts
 - Logout
+=====================
 
 ## Gambar Website
 <p>
@@ -52,7 +56,7 @@ masih bisa dikembangin.
 ## SPESIFIKASI
 
 1. PHP 7+
-2. LARAVEL 9
+2. LARAVEL 8
 3. MYSQL/XAMPP
 4. BOOTSTRAP 5
 5. TEMPLATE BOOTSTRAPMADE
