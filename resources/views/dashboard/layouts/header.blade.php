@@ -12,11 +12,6 @@
             @auth
                 <ul>
                     <li class="nav-item" align="center">
-                        <a class="nav-link" href="/posts">
-                            <span class="menu-title">Blog</span>
-                        </a>
-                    </li>
-                    <li class="nav-item" align="center">
                         <a class="nav-link {{ Request::is('dashboard') ? 'active' : '' }} " href="/dashboard">
                             <span class="menu-title ">Dashboard</span>
                         </a>
@@ -24,6 +19,12 @@
                     <li class="nav-item" align="center">
                         <a class=" nav-link {{ Request::is('dashboard/posts') ? 'active' : '' }} " href="/dashboard/posts">
                             <span class="menu-title ">My Post</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" align="center">
+                        <a class="nav-link" href="/posts">
+                            <span class="menu-title">Blog</span>
                         </a>
                     </li>
                     <li>

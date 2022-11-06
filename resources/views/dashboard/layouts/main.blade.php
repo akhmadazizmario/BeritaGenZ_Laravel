@@ -102,7 +102,12 @@
                 <div class="row justify-content-between">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         <div class="copyright">
-                            <strong><span>By.Aziz Mario</span></strong>
+                            <strong><span>copyright@</span>
+                                <script type="text/javascript">
+                                    var creditsyear = new Date();
+                                    document.write(creditsyear.getFullYear());
+                                </script></span>
+                            </strong>. All Rights Reserved</strong>
                         </div>
 
                     </div>
