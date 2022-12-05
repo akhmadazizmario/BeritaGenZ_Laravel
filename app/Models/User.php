@@ -49,4 +49,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Post::class); # hasMany (one to many) / satu user memiliki banyak artikel atau posts
     }
+
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

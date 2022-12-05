@@ -33,7 +33,7 @@
                         </h5>
                         <div class="mt-5 mb-3">
                             <center>
-                                <img src="/img/Untitled.png" alt="" width="450vh">
+                                <img src="/img/Untitled.png" alt="" width="150vh">
                             </center>
                         </div>
                         <br><br>

@@ -7,6 +7,7 @@ use App\Http\Controllers\LoginController;
 use App\Models\category;  # model category
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardPostController;
+use App\Http\Controllers\ProfilController;
 use App\Models\Post;
 
 /*
@@ -62,3 +63,7 @@ Route::resource('/dashboard/posts', DashboardPostController::class)->middleware(
 
 
 Route::get('/dashboard/posts/checkSlug', [DashboardPostController::class, 'checkSlug'])->middleware('auth');
+
+
+//---dashboard---//
+Route::resource('/profil', ProfilController::class)->middleware('auth'); //midleware fungsinya untuk hak akses

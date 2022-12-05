@@ -16,6 +16,13 @@
                             <span class="menu-title ">Dashboard</span>
                         </a>
                     </li>
+
+                    <li class="nav-item" align="center">
+                        <a class="nav-link {{ Request::is('dashboard/profil') ? 'active' : '' }} " href="/profil">
+                            <span class="menu-title ">Profil</span>
+                        </a>
+                    </li>
+
                     <li class="nav-item" align="center">
                         <a class=" nav-link {{ Request::is('dashboard/posts') ? 'active' : '' }} " href="/dashboard/posts">
                             <span class="menu-title ">My Post</span>
