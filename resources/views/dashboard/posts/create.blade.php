@@ -1,7 +1,7 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
-    <section id="hero-slider" class="hero-slider">
+    <section id="hero-slider" class="hero-slider" style="background-color: #B6E3CE">
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-8">
@@ -66,12 +66,13 @@
                                     <p class="text-danger">{{ $message }}</p>
                                 @enderror
                                 <input id="body" type="hidden" name="body" value="{{ old('body') }}">
-                                <trix-editor input="body"></trix-editor>
+                                <trix-editor class="bg-white" input="body"></trix-editor>
                             </div>
 
 
 
                             <button type="submit" class="btn btn-primary text-white">Tambah Posts</button>
+                            <a href="/dashboard/posts" class="btn btn-danger">Kembali</a>
                         </form>
                     </div>
                 </div>

@@ -25,7 +25,7 @@
                     <div class=" table-responsive col-lg-10 col-md-3">
                         <!--Memanggil create yang ada di web routes-->
                         <a href="/dashboard/posts/create" class="btn btn-primary text-white mb-3"><i
-                                class="bi bi-plus-square-dotted"></i> Create New Post</a>
+                                class="bi bi-plus-square-dotted"></i> Buat Postingan</a>
                         <!-- end --->
 
 
@@ -46,7 +46,7 @@
                                         <input type="text" class="form-control" placeholder="Search" name="search"
                                             value="{{ request('search') }}">
                                         <button class="btn btn-primary" type="submit"><i class="bi bi-search-heart"></i>
-                                            Search</button>
+                                            Cari</button>
                                     </div>
                                     <!---- End ---->
                                 </form>

@@ -1,7 +1,7 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
-    <section id="hero-slider" class="hero-slider "style="background-color: #B6E3CE">
+    <section id="hero-slider" class="hero-slider" style="background-color: #B6E3CE">
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-6 mt-3">
@@ -9,11 +9,11 @@
                     <div class="">
                         <div
                             class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center pt-4 pb-2 mb-3">
-                            <h4 class="h4 ">Welcome back {{ auth()->user()->name }}, in <br>
-                                <center>
-                                    <strong> My Dashboard
-                                    </strong>
-                                </center>
+                            <h4 class="h4 ">Welcome back <strong class="text-primary">{{ auth()->user()->name }}</strong>,
+                                in
+                                <strong> My Dashboard
+                                </strong>
+
                             </h4>
                         </div>
                         <h5 class="mt-2" align="center">
@@ -33,7 +33,7 @@
                         </h5>
                         <div class="mt-5 mb-3">
                             <center>
-                                <img src="/img/Untitled.png" alt="" width="150vh">
+                                <canvas id="myChart" class="bg-white"></canvas>
                             </center>
                         </div>
                         <br><br>
@@ -71,5 +71,36 @@
                 </div>
             </div>
         </div>
+
+
+        <script>
+            var ctx = document.getElementById("myChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["januari", "februari", "maret", "april", "mei", "juni", "juli", "agustus", "september",
+                        "oktober", "november", "desember"
+                    ],
+                    datasets: [{
+                        label: 'Statistik Jumlah Postingan Anda',
+                        backgroundColor: '#ADD8E6',
+                        borderColor: '#93C3D2',
+                        data: <?php echo json_encode('jumlah_posts'); ?>,
+                    }]
+                },
+                options: {
+                    animation: {
+                        onProgress: function(animation) {
+                            progress.value = animation.animationObject.currentStep / animation.animationObject
+                                .numSteps;
+                        }
+                    }
+                }
+            });
+        </script>
+
+
+
+
     </section>
 @endsection
