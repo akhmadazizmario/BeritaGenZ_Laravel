@@ -15,7 +15,6 @@
                                 <div class="row no-gutters">
                                     <div class="col-md-12">
                                         <div class="card-body">
-
                                             <form method="post" action="/profil/edit" class="mb-5"
                                                 enctype="multipart/form-data">
                                                 @method('put')
@@ -63,16 +62,12 @@
 
                                                 <div class="mb-3">
                                                     <label for="password" class="form-label"><strong>Password</strong>
-                                                        <font color="red"></font>
+                                                        <font color="red">* setiap ganti profil harus ganti password buat
+                                                            keamanan yah</font>
                                                     </label>
                                                     <input type="password" class="form-control" id="password"
-                                                        name="password" @error('password') is-invalid @enderror required
-                                                        autofocus value="{{ old('password', $user->password) }}">
-                                                    @error('password')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                    @enderror
+                                                        name="password">
+
                                                 </div>
 
                                                 <div class="mb-3">
@@ -99,7 +94,10 @@
                                                 <button type="submit" class="btn btn-primary text-white">Update
                                                     Profile</button>
                                                 <a href="/profil" class="btn btn-danger">Kembali</a>
+
                                             </form>
+
+
                                         </div>
                                     </div>
 

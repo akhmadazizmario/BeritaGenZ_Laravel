@@ -82,7 +82,7 @@
                         "oktober", "november", "desember"
                     ],
                     datasets: [{
-                        label: 'Statistik Jumlah Postingan Anda',
+                        label: 'Statistik Postingan Anda',
                         backgroundColor: '#ADD8E6',
                         borderColor: '#93C3D2',
                         data: <?php echo json_encode('jumlah_posts'); ?>,
