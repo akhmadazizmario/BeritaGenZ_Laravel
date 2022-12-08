@@ -1,11 +1,14 @@
-@extends('layout.main')
 <!--memanghubungkan halaman di layout-->
+@extends('layout.main')
+<!------- body------------->
 @section('container')
     <section id="hero-slider" class="hero-slider">
         <div class="container">
-            <!--memanghubungkan halaman main.blade atau folder utama-->
-            <img src="/img/Untitled.png" alt="aziz" width="200" style="display: block;margin:auto;"><br>
+            <!--Gambar-->
+            <a href="/posts"><img src="/img/Untitled.png" alt="aziz" width="200"
+                    style="display: block;margin:auto;"></a><br>
             <h1 class="text-center mb-3">{{ $title }}</h1><br>
+            <!----end gambar judul--->
 
             <!-- MENU PENCARIAN & TITLE--->
             <div class="row justify-content-center mb-3">
@@ -31,7 +34,7 @@
             </div>
             <!--- END MENU PENCARIAN--->
 
-
+            <!--------- berita terbaru---------->
             @if ($posts->count())
                 <div class="card mb-3">
                     @if ($posts[0]->image)
@@ -64,6 +67,7 @@
                             More</a>
 
                     </div>
+                    <!--------------- end --------------------->
                 </div>
         </div>
 
@@ -73,26 +77,31 @@
 
 
     <section id="hero-slider" class="hero-slider">
+        <!------------- Berita tampilan----------------->
         <div class="container">
             <div class="row">
                 @foreach ($posts->skip(1) as $post)
                     <div class="col-md-4 mb-3">
                         <div class="card">
+                            <!-------category------------->
                             <div class="position-absolute px-3 py-2 text-white"
                                 style="background-color: rgba(0, 0, 0, 0.7)"><a
                                     href="/posts?category={{ $post->category->slug }}"
                                     class="text-white text-decoration-none">
                                     {{ $post->category->name }}</a></div>
-
+                            <!---- end category--------------->
+                            <!------- image ---------->
                             @if ($post->image)
                                 <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->category->name }}"
                                     class="img-fluid">
                             @else
+                                <!--- API Unsplash---------->
                                 <img src="https://source.unsplash.com/500x400?{{ $post->category->name }}"
                                     class="card-img-top" alt="{{ $post->category->name }}">
                             @endif
 
                             <div class=" card-body">
+                                <!---------- title/judul ------------>
                                 <h5 class="card-title">{{ $post->title }}</h5>
                                 <p>
                                     <small>
