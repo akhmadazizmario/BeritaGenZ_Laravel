@@ -61,16 +61,6 @@
                                                 </div>
 
                                                 <div class="mb-3">
-                                                    <label for="password" class="form-label"><strong>Password</strong>
-                                                        <font color="red">* setiap ganti profil harus ganti password buat
-                                                            keamanan yah</font>
-                                                    </label>
-                                                    <input type="password" class="form-control" id="password"
-                                                        name="password">
-
-                                                </div>
-
-                                                <div class="mb-3">
                                                     <label for="image" class="form-label"><strong>Edit
                                                             gambar</strong></label>
                                                     <input type="hidden" name="oldImage" value="{{ $user->image }}">

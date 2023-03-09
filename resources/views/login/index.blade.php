@@ -45,9 +45,10 @@
 
                             <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
 
-                        </form>
-                        <h5 class="d-block text-center mt-3">Not registered? <a href="/register"
-                                class="text-danger">Register Now!</a></h5>
+                        </form><br>
+                        <hr>
+                        <h5 class="d-block text-center mt-3">Not registered ? <a href="/register"
+                                class="text-white btn btn-success">Register Sekarang!</a></h5>
                     </main>
                 </div>
             </div>

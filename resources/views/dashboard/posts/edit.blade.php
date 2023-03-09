@@ -11,7 +11,7 @@
                     </div>
 
                     <div class="col-lg-8">
-                        <form method="post" action="/dashboard/posts/{{ $post->slug }}" class="mb-5"
+                        <form method="post" action="/dash/posts/{{ $post->slug }}" class="mb-5"
                             enctype="multipart/form-data">
                             @method('put')
                             @csrf
@@ -83,7 +83,7 @@
                             </div>
 
                             <button type="submit" class="btn btn-primary text-white">Update Posts</button>
-                            <a href="/dashboard/posts" class="btn btn-danger">Kembali</a>
+                            <a href="/dash/posts" class="btn btn-danger">Kembali</a>
                         </form>
                     </div>
                 </div>

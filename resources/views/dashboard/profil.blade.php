@@ -1,7 +1,7 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
-    <section id="hero-slider" class="hero-slider" style="background-color: #B6E3CE">
+    <section id="hero-slider" class="hero-slider" style="background-color:#fff ;">
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-5">
@@ -42,7 +42,7 @@
                                                 <a href="/profil/edit" class="text text-white"><i
                                                         class="fas fa-user-edit"></i>
                                                     UbahProfil</a>
-                                            </div>
+                                            </div> <a class="btn btn-danger"href="/ubahpassword/edit">Ubah Password</a>
                                         </div>
                                     </div>
                                 </div>

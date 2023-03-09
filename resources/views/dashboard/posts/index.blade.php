@@ -1,7 +1,7 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
-    <section id="hero-slider" class="hero-slider" style="background-color: #B6E3CE">
+    <section id="hero-slider" class="hero-slider" style="background-color: #fff">
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-10">
@@ -24,7 +24,7 @@
 
                     <div class=" table-responsive col-lg-10 col-md-3">
                         <!--Memanggil create yang ada di web routes-->
-                        <a href="/dashboard/posts/create" class="btn btn-primary text-white mb-3"><i
+                        <a href="/dash/posts/create" class="btn btn-primary text-white mb-3"><i
                                 class="bi bi-plus-square-dotted"></i> Buat Postingan</a>
                         <!-- end --->
 
@@ -32,7 +32,7 @@
                         <!-- MENU PENCARIAN & TITLE--->
                         <div class="row justify-content-center ">
                             <div class="col-md-6">
-                                <form action="/dashboard/posts">
+                                <form action="/dash/posts">
                                     <!-- Fungsi judul di title --->
                                     @if (request('category'))
                                         <input type="hidden" name="category" value="{{ request('category') }}">
@@ -43,8 +43,8 @@
                                     <!-- end --->
                                     <!---- Search ------->
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Search" name="search"
-                                            value="{{ request('search') }}">
+                                        <input type="text" class="form-control" placeholder="Cari Postingan...."
+                                            name="search" value="{{ request('search') }}">
                                         <button class="btn btn-primary" type="submit"><i class="bi bi-search-heart"></i>
                                             Cari</button>
                                     </div>
@@ -73,14 +73,14 @@
                                         <td class="text-center">{{ $post->category->name }}</td>
                                         <td>
                                             <center>
-                                                <a href="/dashboard/posts/{{ $post->slug }}"
+                                                <a href="/posts/{{ $post->slug }}"
                                                     class="badge bg-info text-decoration-none">
                                                     <i class="bi bi-eyeglasses"></i> lihat</a>
-                                                <a href="/dashboard/posts/{{ $post->slug }}/edit"
+                                                <a href="/dash/posts/{{ $post->slug }}/edit"
                                                     class="badge bg-warning text-decoration-none">
                                                     <i class="bi bi-pencil-square"></i> edit</a>
 
-                                                <form action="/dashboard/posts/{{ $post->slug }}" method="post"
+                                                <form action="/dash/posts/{{ $post->slug }}" method="post"
                                                     class="d-inline">
                                                     @method('delete')
                                                     @csrf

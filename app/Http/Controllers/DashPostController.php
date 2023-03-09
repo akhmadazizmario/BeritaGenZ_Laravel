@@ -7,11 +7,12 @@ use Illuminate\Support\Str;
 use App\Models\User;
 use App\Models\Post;
 use App\Models\category;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 
 
-class DashboardPostController extends Controller
+class DashPostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +35,8 @@ class DashboardPostController extends Controller
         //end 
         //
         return view('dashboard.posts.index', [
-            'posts' => Post::where('user_id', auth()->user()->id)->orderBy('created_at', 'DESC')->filter(request(['search', 'category', 'author']))->paginate(4)->withQueryString()
+            'posts' => Post::where('user_id', auth()->user()->id)->orderBy('created_at', 'DESC')->filter(request(['search', 'category', 'author']))->paginate(4)->withQueryString(),
+            'user' => User::where('id', Auth::user()->id)->first()
         ]);
     }
 
@@ -47,7 +49,8 @@ class DashboardPostController extends Controller
     {
         //
         return view('dashboard.posts.create', [
-            'categories' => category::all()
+            'categories' => category::all(),
+            'user' => User::where('id', Auth::user()->id)->first()
         ]);
     }
 
@@ -77,7 +80,7 @@ class DashboardPostController extends Controller
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200, '...');
 
         Post::create($validatedData);
-        return redirect('/dashboard/posts')->with('success', 'postingan anda berhasil ditambahkan');
+        return redirect('/dash/posts')->with('success', 'postingan anda berhasil ditambahkan');
     }
 
     /**
@@ -90,7 +93,8 @@ class DashboardPostController extends Controller
     {
         //Menampilkan Data
         return view('dashboard.posts.show', [
-            'post' => $post
+            "post" => $post,
+            'user' => User::where('id', Auth::user()->id)->first()
         ]);
     }
 
@@ -105,7 +109,8 @@ class DashboardPostController extends Controller
         //---Menampilkan Data ------//
         return view('dashboard.posts.edit', [
             'post' => $post,
-            'categories' => category::all()
+            'categories' => category::all(),
+            'user' => User::where('id', Auth::user()->id)->first()
         ]);
     }
 
@@ -139,7 +144,7 @@ class DashboardPostController extends Controller
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200, '...');
 
         Post::where('id', $post->id)->update($validatedData);
-        return redirect('/dashboard/posts')->with('success', 'postingan anda berhasil diupdate');
+        return redirect('/dash/posts')->with('success', 'postingan anda berhasil diupdate');
     }
 
     /**
@@ -156,6 +161,6 @@ class DashboardPostController extends Controller
         }
         //----------------//
         Post::destroy($post->id);
-        return redirect('/dashboard/posts')->with('destroy', 'Data Berhasil di hapus');
+        return redirect('/dash/posts')->with('destroy', 'Data Berhasil di hapus');
     }
 }

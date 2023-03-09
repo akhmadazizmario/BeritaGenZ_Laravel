@@ -44,8 +44,8 @@ class DatabaseSeeder extends Seeder
             'slug' => 'teknologi-informasi',
         ]);
         category::create([
-            'name' => 'Komputer',
-            'slug' => 'komputerisasi',
+            'name' => 'Teknologi',
+            'slug' => 'teknologies',
         ]);
         category::create([
             'name' => 'politik',

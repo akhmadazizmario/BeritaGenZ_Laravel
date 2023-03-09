@@ -9,28 +9,18 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-class ProfilController extends Controller
+class UbahpasswordController extends Controller
 {
-    //menampilkan profil 
+    ////menampilkan profil 
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view(
-            'dashboard.profil',
-            [
-                'user' => User::where('id', Auth::user()->id)->first()
-            ]
-        );
-    }
-
     public function show()
     {
         //Menampilkan Data
-        return view('dashboard.edit', [
+        return view('dashboard.ubahpassword', [
             'user' => User::where('id', Auth::user()->id)->first()
         ]);
     }
@@ -44,40 +34,19 @@ class ProfilController extends Controller
     public function edit()
     {
         //---Menampilkan Data ------//
-        return view('dashboard.edit', [
-            'user' => User::where('id', Auth::user()->id)->first()
-        ]);
-    }
-
-    public function ubahpassword()
-    {
-        //--menampilkan Data ------//
         return view('dashboard.ubahpassword', [
             'user' => User::where('id', Auth::user()->id)->first()
         ]);
     }
 
-
     public function update(Request $request, User $user)
     {
         //-- Eksekusi update ---//
         $validatedData = $request->validate([
-            'name' => 'required|max:255',
-            'username' => 'required',
-            'email' => 'required',
-            'image' => 'image|file|max:2024',
+            'password' => 'required',
         ]);
 
-        //---- Image delete --------//
-        if ($request->file('image')) {
-            if ($request->oldImage) {
-                Storage::delete($request->oldImage);
-            }
-            //--- mengupdate gambar ---//
-            $validatedData['image'] = $request->file('image')->store('post-images');
-        }
-        ////-----------------///
-        $validatedData['id'] = auth()->user()->id;
+        $validatedData['password'] = bcrypt($request->password);
 
         User::where('id', Auth::user()->id)->first()->update($validatedData);
         return redirect('/profil')->with('success', 'profil anda berhasil diupdate');
