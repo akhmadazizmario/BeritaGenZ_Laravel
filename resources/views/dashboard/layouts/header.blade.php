@@ -7,7 +7,6 @@
             <h1>BeritaGenZ</h1>
         </a>
 
-
         <nav id="navbar" class="navbar">
             @auth
                 <ul>
@@ -18,13 +17,7 @@
                     </li>
 
                     <li class="nav-item" align="center">
-                        <a class="nav-link {{ Request::is('dashboard/profil') ? 'active' : '' }} " href="/profil">
-                            <span class="menu-title ">Profil</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item" align="center">
-                        <a class=" nav-link {{ Request::is('dashboard/posts') ? 'active' : '' }} " href="/dashboard/posts">
+                        <a class=" nav-link {{ Request::is('dash/posts') ? 'active' : '' }}" href="/dash/posts">
                             <span class="menu-title ">My Post</span>
                         </a>
                     </li>
@@ -34,14 +27,33 @@
                             <span class="menu-title">Blog</span>
                         </a>
                     </li>
-                    <li>
-                        <a class="nav-link">
-                            <form action="/logout" method="post">
-                                @csrf
-                                <button type="submit" class="dropdown-item">
-                                    <strong>Logout</strong></button>
-                            </form>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            @if ($user->image)
+                                <img src="{{ asset('storage/' . $user->image) }}" alt="profil" class="img-fluid"
+                                    height="20px" width="30px" style="border-radius:60%;">
+                            @else
+                                <img src="https://source.unsplash.com/500x400?user" class="img-fluid " alt="profil"
+                                    height="20px" width="30px" style="border-radius:60%;">
+                            @endif
                         </a>
+                        <ul class="dropdown-menu position-right">
+                            <li> <a class="nav-link {{ Request::is('dashboard/profil') ? 'active' : '' }} " href="/profil">
+                                    <span class="menu-title ">Profil</span>
+                                </a> </li>
+                            <li> <a class="nav-link"href="/ubahpassword/edit">Ubah Password</a> </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="nav-link">
+                                    <form action="/logout" method="post">
+                                        @csrf
+                                        <button type="submit" class="dropdown-item">
+                                            <strong>Logout</strong></button>
+                                    </form>
+                                </a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav><!-- .navbar -->

@@ -11,7 +11,7 @@
                     </div>
 
                     <div class="col-lg-8">
-                        <form method="post" action="/dashboard/posts" class="mb-5" enctype="multipart/form-data">
+                        <form method="post" action="/dash/posts" class="mb-5" enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
                                 <label for="title" class="form-label">title</label>
@@ -72,7 +72,7 @@
 
 
                             <button type="submit" class="btn btn-primary text-white">Tambah Posts</button>
-                            <a href="/dashboard/posts" class="btn btn-danger">Kembali</a>
+                            <a href="/dash/posts" class="btn btn-danger">Kembali</a>
                         </form>
                     </div>
                 </div>

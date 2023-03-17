@@ -1,19 +1,19 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
-    <section id="hero-slider" class="hero-slider" style="background-color: #B6E3CE">
+    <section id="hero-slider" class="hero-slider" style="background-color: #ffffff">
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-8">
                     <h1 class="mb-3">{{ $post->title }}</h1>
                     <br>
 
-                    <a href="/dashboard/posts" class="btn btn-success"><i class="bi bi-box-arrow-left"></i>
+                    <a href="/dash/posts" class="btn btn-success"><i class="bi bi-box-arrow-left"></i>
                         Back to all my
                         Posts</a>
-                    <a href="/dashboard/posts/{{ $post->slug }}/edit" class="btn btn-warning">
+                    <a href="/dash/posts/{{ $post->slug }}/edit" class="btn btn-warning">
                         <i class="bi bi-pen-fill"></i> Edit</a>
-                    <form action="/dashboard/posts/{{ $post->slug }}" method="post" class="d-inline">
+                    <form action="/dash/posts/{{ $post->slug }}" method="post" class="d-inline">
                         @method('delete')
                         @csrf
                         <button class="btn btn-danger border-0"

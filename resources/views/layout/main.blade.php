@@ -63,7 +63,7 @@
                         </p>
                     </div>
                     <div class="col-6 col-lg-2">
-                        <h3 class="footer-heading">Navigation</h3>
+                        <h3 class="footer-heading">Navigasi</h3>
                         <ul class="footer-links list-unstyled">
                             <li><a href="/posts"><i class="bi bi-chevron-right"></i> Home</a></li>
                             <li><a href="/posts"><i class="bi bi-chevron-right"></i> Blog</a></li>
@@ -72,6 +72,13 @@
                         </ul>
                     </div>
 
+                    <div class="col-6 col-lg-2">
+                        <h3 class="footer-heading">Bantuan</h3>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="/tutorkomen"><i class="bi bi-chevron-right"></i> Tutorial Komentar</a></li>
+
+                        </ul>
+                    </div>
 
                     <div class="col-lg-4">
                         <h3 class="footer-heading">Logo</h3>
