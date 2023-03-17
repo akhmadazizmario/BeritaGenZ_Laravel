@@ -58,9 +58,10 @@
 
                             <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Register</button>
 
-                        </form>
-                        <h5 class="d-block text-center mt-3">Allready registered? <a href="/login"
-                                class="text-danger">Login</a></h5>
+                        </form><br>
+                        <hr>
+                        <h5 class="d-block text-center mt-3">Allready registered ? <a href="/login"
+                                class="text-white btn btn-success">Login</a></h5>
                     </main>
                 </div>
             </div>

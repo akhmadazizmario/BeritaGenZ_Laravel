@@ -7,7 +7,8 @@
             <!--Gambar-->
             <a href="/posts"><img src="/img/Untitled.png" alt="aziz" width="200"
                     style="display: block;margin:auto;"></a><br>
-            <h1 class="text-center mb-3">{{ $title }}</h1><br>
+            <h1 class="text-center mb-3"><strong>{{ $title }}</strong></h1><br>
+
             <!----end gambar judul--->
 
             <!-- MENU PENCARIAN & TITLE--->
@@ -24,9 +25,9 @@
                         <!-- end --->
                         <!---- Search ------->
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Search" name="search"
+                            <input type="text" class="form-control" placeholder="Cari postingan...." name="search"
                                 value="{{ request('search') }}">
-                            <button class="btn btn-primary" type="submit">Search</button>
+                            <button class="btn btn-primary" type="submit"><i class="bi bi-search-heart"></i> Cari</button>
                         </div>
                         <!---- End ---->
                     </form>

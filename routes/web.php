@@ -8,6 +8,7 @@ use App\Models\category;  # model category
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardPostController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\UbahpasswordController;
 use App\Models\Post;
 
 /*
@@ -67,3 +68,4 @@ Route::get('/dashboard/posts/checkSlug', [DashboardPostController::class, 'check
 
 //---dashboard---//
 Route::resource('/profil', ProfilController::class)->middleware('auth'); //midleware fungsinya untuk hak akses
+Route::resource('/ubahpassword', UbahpasswordController::class)->middleware('auth'); //index adalah parameter di Registercontroller

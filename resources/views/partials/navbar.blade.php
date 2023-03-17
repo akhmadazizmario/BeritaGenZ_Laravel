@@ -20,6 +20,11 @@
                     </li>
                 @else
                     <li>
+                        <a href="/register" class="nav-link {{ $active === 'login' ? 'active' : '' }}"><strong>
+                                Register</strong></a>
+
+                    </li>
+                    <li>
                         <a href="/login" class="nav-link {{ $active === 'login' ? 'active' : '' }}"><strong>
                                 Login</strong> <i class="bi bi-box-arrow-in-right"></i></a>
 
