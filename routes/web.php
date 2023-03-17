@@ -66,8 +66,6 @@ Route::get('/dashboard/posts/checkSlug', [DashPostController::class, 'checkSlug'
 //---profil---//
 Route::resource('/profil', ProfilController::class)->middleware('auth'); //midleware fungsinya untuk hak akses
 Route::resource('/ubahpassword', UbahpasswordController::class)->middleware('auth'); //index adalah parameter di Registercontroller
-<<<<<<< HEAD
-=======
 
 //tutorkomen
 Route::get('/tutorkomen', function () {
@@ -76,4 +74,3 @@ Route::get('/tutorkomen', function () {
         "active" => 'tutor komen',
     ]);
 });
->>>>>>> a0e701ab7c65943c7f1f5507709c9ee02adee6eb
