@@ -100,7 +100,7 @@
                         <div class="d-flex justify-content-center">
                             {{ $posts->links() }}
                         </div>
-                        <!---- END ------>
+                        <!----- END ------>
                     </div>
                 </div>
             </div>

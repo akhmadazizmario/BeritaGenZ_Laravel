@@ -4504,7 +4504,7 @@ core_defaults._set('doughnut', {
 		}
 	},
 
-	// The percentage of the chart that we cut out of the middle.
+	/// The percentage of the chart that we cut out of the middle.
 	cutoutPercentage: 50,
 
 	// The rotation of the chart, where the first data arc begins.

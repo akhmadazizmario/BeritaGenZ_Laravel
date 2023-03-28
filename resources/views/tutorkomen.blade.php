@@ -20,5 +20,6 @@
             <h4><strong>4.</strong> Jika Sudah Buat akun di disqus, Maka akan ada email yang masuk untuk aktivasi</h4><br>
             <h4><strong>5.</strong> Selesai, Selamat dan anda sudah bisa ikut berkomentar</h4>
         </div>
+        <!---->
     </section><br><br><br><br>
 @endsection

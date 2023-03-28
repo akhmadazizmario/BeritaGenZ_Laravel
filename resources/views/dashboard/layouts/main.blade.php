@@ -9,11 +9,11 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <!-- Favicons -->
+    <!-- Favicons --->
     <link href="/img/Untitled.png" rel="icon">
     <link href="/img/Untitled.png" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link

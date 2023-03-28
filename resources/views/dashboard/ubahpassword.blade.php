@@ -2,6 +2,7 @@
 
 @section('container')
     <section id="hero-slider" class="hero-slider" style="background-color:#fff ;">
+        <!------------------>
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-5">

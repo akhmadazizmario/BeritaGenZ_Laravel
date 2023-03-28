@@ -27,7 +27,7 @@ class DashboardController extends Controller
     }
     public function show()
     {
-        //Menampilkan Data
+        //Menampilkan Data//
         for ($bulan = 1; $bulan < 13; $bulan++) {
             $chartpost = collect(DB::SELECT("SELECT count(user_id) as jumlah from posts where month(created_at)= '$bulan'"))->first();
             $jumlah_posts = $chartpost->jumlah;

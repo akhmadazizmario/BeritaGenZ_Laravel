@@ -65,7 +65,7 @@
 
             </div>
         @else
-            <!-- Kalau belom login -->
+            <!---- Kalau belom login ---->
             <li class="nav-item">
                 <a href="/login" class="nav-link {{ $active === 'login' ? 'active' : '' }}"><i
                         class="bi bi-box-arrow-in-right"></i> Login</a>

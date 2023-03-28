@@ -1,5 +1,5 @@
 @extends('layout.main')
-<!--memanghubungkan halaman di layout-->
+<!--memanghubungkan halaman di layout--->
 @section('container')
     <!--memanghubungkan halaman main.blade atau folder utama-->
     <section id="hero-slider" class="hero-slider">

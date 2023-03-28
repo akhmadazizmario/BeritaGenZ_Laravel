@@ -117,6 +117,7 @@
                                 </p>
                                 <p class="card-text">{{ $post->excerpt }}</p>
                                 <a href="/posts/{{ $post->slug }}" class="btn btn-primary">Read More</a>
+                                <!----->
                             </div>
                         </div>
                     </div>
