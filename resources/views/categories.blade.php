@@ -1,7 +1,7 @@
 <!---===============================================================-->
 <!--                                                                -->
 <!--HALAMAN CATEGORY INI BERFUNGSI UNTUK MENAMPILKAN SEMUA CATEGORY--->
-<!--                                                                -->
+<!--                                                               --->
 <!---===============================================================-->
 @extends('layout.main')
 <!--memanghubungkan halaman di layout-->

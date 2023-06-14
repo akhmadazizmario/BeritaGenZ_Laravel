@@ -1,7 +1,7 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
-    <!------ content pertama --------->
+    <!-------- content pertama --------->
     <section id="hero-slider" class="hero-slider" style="background-color: #fff">
         <div class="banner">
             <div class="container">

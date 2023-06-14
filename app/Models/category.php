@@ -13,6 +13,6 @@ class category extends Model
 
     public function posts()
     {
-        return $this->hasMany(Post::class); # ini adalah one to many kebalikan dari model Post.php
+        return $this->hasMany(Post::class); # ini adalah one to many kebalikan dari model Post.php ...
     }
 }

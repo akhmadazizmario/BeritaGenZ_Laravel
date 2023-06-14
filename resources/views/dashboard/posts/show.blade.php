@@ -7,7 +7,7 @@
                 <div class="col-md-8">
                     <h1 class="mb-3">{{ $post->title }}</h1>
                     <br>
-
+                    <!---------------->
                     <a href="/dash/posts" class="btn btn-success"><i class="bi bi-box-arrow-left"></i>
                         Back to all my
                         Posts</a>

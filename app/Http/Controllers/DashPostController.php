@@ -47,7 +47,7 @@ class DashPostController extends Controller
      */
     public function create()
     {
-        //
+        // menambahkan
         return view('dashboard.posts.create', [
             'categories' => category::all(),
             'user' => User::where('id', Auth::user()->id)->first()

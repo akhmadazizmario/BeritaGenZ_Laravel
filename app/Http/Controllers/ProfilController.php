@@ -29,7 +29,7 @@ class ProfilController extends Controller
 
     public function show()
     {
-        //Menampilkan Data
+        //Menampilkan Data......
         return view('dashboard.edit', [
             'user' => User::where('id', Auth::user()->id)->first()
         ]);

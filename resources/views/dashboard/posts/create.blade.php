@@ -9,7 +9,7 @@
                         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-4 pb-2 mb-5 border-bottom">
                         <h1 class="h2">Tambah postingan baru :</h1>
                     </div>
-
+                    <!--------------------->
                     <div class="col-lg-8">
                         <form method="post" action="/dash/posts" class="mb-5" enctype="multipart/form-data">
                             @csrf

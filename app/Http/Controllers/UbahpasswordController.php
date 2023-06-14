@@ -19,7 +19,7 @@ class UbahpasswordController extends Controller
      */
     public function show()
     {
-        //Menampilkan Data
+        //Menampilkan Data.......
         return view('dashboard.ubahpassword', [
             'user' => User::where('id', Auth::user()->id)->first()
         ]);
